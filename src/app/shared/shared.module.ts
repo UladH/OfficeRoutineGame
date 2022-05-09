@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { CoreModule } from '../core/core.module';
+import { TextButtonComponent } from './buttons/text-button/text-button.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    TextButtonComponent
+  ],
   imports: [
     CoreModule
   ],
   exports: [
-    CoreModule
+    CoreModule,
+
+    TextButtonComponent
   ]
 })
 export class SharedModule { }

@@ -1,0 +1,57 @@
+@use "sass:map";
+
+@import "colors.scss";
+@import "typography.scss";
+
+.org-button{    
+    border: 3px solid transparent;
+    background-color: transparent;
+    border-radius: 0.2em;
+
+    &:hover{
+        background-color: map-get($colors, grey-100);
+    }
+    
+    &:active{
+        border-color: map-get($colors, grey-500);
+    }
+    
+    &:focus{
+        border-color: map-get($colors, grey-500);
+    }
+}
+
+.org-button-label{
+    @include get-font(H900, default , center);
+    color: map-get($colors, grey-900);
+}
+
+.org-button-xs{
+    .org-button-label{
+        @include get-font(H100, default , center);
+    }
+}
+
+.org-button-s{
+    .org-button-label{
+        @include get-font(H300, default , center);
+    }
+}
+
+.org-button-m{
+    .org-button-label{
+        @include get-font(H500, default , center);
+    }
+}
+
+.org-button-l{
+    .org-button-label{
+        @include get-font(H700, default , center);
+    }
+}
+
+.org-button-xl{
+    .org-button-label{
+        @include get-font(H900, default , center);
+    }
+}

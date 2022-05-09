@@ -1,0 +1,11 @@
+<button
+    class = "org-button"
+    fxFill
+
+    [ngClass]="getComponentClasses()"
+    (click) = "onClickHandler($event)">
+    <span
+        class = "org-button-label">
+        {{label}}      
+    </span>
+</button>
