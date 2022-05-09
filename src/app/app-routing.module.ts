@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {path: '', redirectTo: '', pathMatch: 'full'},
+  {path: '', loadChildren: () => import('./pages/main-menu/main-menu.module').then(m => m.MainMenuModule)},
   {path: '**', redirectTo: '', pathMatch: 'full'}
 ];
 

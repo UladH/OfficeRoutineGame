@@ -1,0 +1,58 @@
+@use "sass:map";
+
+$base-font-family: (
+    default: PostPixel
+);
+
+$base-align: (
+    left: left,
+    center: center,
+    right: right,
+);
+
+$base-size: (
+    H100: 10px,
+    H200: 10px,
+    H300: 12px,
+    H400: 14px,
+    Paragraph: 14px,
+    H500: 16px,
+    H600: 20px,
+    H700: 24px,
+    H800: 28px,
+    H900: 34px
+);
+
+$base-height: (
+    H100: 16px,
+    H200: 16px,
+    H300: 20px,
+    H400: 24px,
+    Paragraph: 24px,
+    H500: 28px,
+    H600: 32px,
+    H700: 36px,
+    H800: 40px,
+    H900: 48px
+);
+
+$base-letter-spacing: (
+    H100: normal,
+    H200: 1.2px,
+    H300: normal,
+    H400: normal,
+    Paragraph: normal,
+    H500: normal,
+    H600: normal,
+    H700: normal,
+    H800: normal,
+    H900: normal
+);
+
+@mixin get-font($text-type, $font-family, $align) {
+    font-family: map.get($base-font-family, $font-family);
+    font-size: map.get($base-size, $text-type);
+    line-height: map.get($base-height, $text-type);
+    letter-spacing: map.get($base-letter-spacing, $text-type);
+    text-align: map.get($base-align, $align);
+}   
