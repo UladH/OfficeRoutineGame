@@ -3,21 +3,22 @@
 @import "colors.scss";
 @import "typography.scss";
 
-.org-button{    
+.org-button{
+    width: 100%;
     border: 3px solid transparent;
     background-color: transparent;
     border-radius: 0.2em;
 
     &:hover{
-        background-color: map-get($colors, grey-100);
+        background-color: rgba(map-get($colors, grey-100), 0.5);
     }
     
     &:active{
-        border-color: map-get($colors, grey-500);
+        border-color: rgba(map-get($colors, grey-500), 0.5);
     }
     
     &:focus{
-        border-color: map-get($colors, grey-500);
+        border-color: rgba(map-get($colors, grey-500), 0.5);
     }
 }
 
