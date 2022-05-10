@@ -1,0 +1,37 @@
+@use "sass:map";
+
+@import "colors.scss";
+@import "a4-papper-format.scss";    
+
+$card-width: 400px;
+
+.org-menu-card-wrapper{
+    width: $card-width;
+    height: get-a4-height-by-width($card-width);    
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+    &.flipped{
+        transform: rotateY(180deg);
+    }
+}
+
+.org-menu-card{
+    position: absolute;
+    border-radius: 30px;
+    background-color: map-get($colors, brown-100);
+    backface-visibility: hidden;
+}
+
+.org-menu-card-front{
+}
+
+.org-menu-card-back{
+    transform: rotateY(180deg);
+}
+
+.org-menu-card-body{
+    width: 80%;
+    height: 80%;
+    background-color: map-get($colors, white);
+}

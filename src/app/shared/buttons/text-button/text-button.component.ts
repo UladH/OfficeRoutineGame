@@ -1,11 +1,12 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 import { Color } from 'src/app/core/constants/enums/color.enum';
 import { Size } from 'src/app/core/constants/enums/size.enum';
 
 @Component({
   selector: 'org-text-button',
   templateUrl: './text-button.component.html',
-  styleUrls: ['./text-button.component.scss']
+  styleUrls: ['./text-button.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TextButtonComponent {
   @Input() label: string = '';

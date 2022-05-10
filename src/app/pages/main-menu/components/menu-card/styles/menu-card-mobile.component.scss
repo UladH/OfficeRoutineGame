@@ -1,0 +1,24 @@
+@use "sass:map";
+
+@import "colors.scss";
+@import "screen-sizes.scss";
+@import "a4-papper-format.scss";   
+
+
+@media screen and (max-width: map-get($screen-sizes, mobile)) {
+    $card-width: 100vw;
+
+    .org-menu-card-wrapper{
+        width: $card-width;
+        height: get-a4-height-by-width($card-width);
+    }
+}
+
+@media screen and (max-height: map-get($screen-sizes, mobile)) and (orientation: landscape) {
+    $card-width: 350px;
+
+    .org-menu-card-wrapper{
+        width: $card-width;
+        height: get-a4-width-by-height($card-width);
+    }
+}

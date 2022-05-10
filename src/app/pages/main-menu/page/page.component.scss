@@ -2,13 +2,11 @@
 
 @import "colors.scss";
 
-:host{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+.org-page-wrapper{
+    min-width: 100vw;
+    min-height: 100vh;
 
-    background-color: map-get($colors, default-background);
-    user-select: none
+    user-select: none;
+
+    background-color: map-get($colors, blue-100);
 }

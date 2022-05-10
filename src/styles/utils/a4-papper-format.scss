@@ -1,0 +1,7 @@
+@function get-a4-height-by-width($widht){
+    @return calc($widht / 210 * 297);
+}
+
+@function get-a4-width-by-height($height){
+    @return calc($height / 297 * 210);
+}

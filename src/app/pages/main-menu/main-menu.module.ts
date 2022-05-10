@@ -5,6 +5,7 @@ import { I18N_PROVIDER } from './i18n/_i18n.provider';
 import { MainMenuRoutingModule } from './main-menu-routing.module';
 import { TranslocoModule } from '@ngneat/transloco';
 import { LogoComponent } from './components/logo/logo.component';
+import { MenuCardComponent } from './components/menu-card/menu-card.component';
 
 @NgModule({
   providers:[
@@ -12,7 +13,8 @@ import { LogoComponent } from './components/logo/logo.component';
   ],
   declarations: [
     PageComponent,
-    LogoComponent
+    LogoComponent,
+    MenuCardComponent
   ],
   imports: [
     MainMenuRoutingModule,
