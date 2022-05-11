@@ -6,6 +6,8 @@ import { MainMenuRoutingModule } from './main-menu-routing.module';
 import { TranslocoModule } from '@ngneat/transloco';
 import { LogoComponent } from './components/logo/logo.component';
 import { MenuCardComponent } from './components/menu-card/menu-card.component';
+import { MainMenuComponent } from './components/menus/main-menu/main-menu.component';
+import { OptionsMenuComponent } from './components/menus/options-menu/options-menu.component';
 
 @NgModule({
   providers:[
@@ -14,7 +16,9 @@ import { MenuCardComponent } from './components/menu-card/menu-card.component';
   declarations: [
     PageComponent,
     LogoComponent,
-    MenuCardComponent
+    MenuCardComponent,
+    MainMenuComponent,
+    OptionsMenuComponent
   ],
   imports: [
     MainMenuRoutingModule,

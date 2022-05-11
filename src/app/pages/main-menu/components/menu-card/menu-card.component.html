@@ -1,12 +1,13 @@
-<div class="org-menu-card-wrapper">
+<div class="org-menu-card-wrapper" [class.flipped]="isFlipped">
     <div class="org-menu-card org-menu-card-front" fxLayout="column" fxLayoutAlign="center center" fxFill >
         <div class="org-menu-card-body">
-            Main menu
+            <ng-content></ng-content>
+            <ng-container *ngTemplateOutlet="frontTemplate"></ng-container>
         </div>
     </div>     
     <div class="org-menu-card org-menu-card-back" fxLayout="column" fxLayoutAlign="center center" fxFill >
         <div class="org-menu-card-body">
-            Secondary menu
+            <ng-container *ngTemplateOutlet="backTemplate"></ng-container>
         </div>
     </div> 
 </div>
