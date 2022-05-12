@@ -9,7 +9,7 @@ export class OrgTemplateDirective {
 
   //#region  constructor
   
-  constructor(public template: TemplateRef<any>) {}
+  constructor(private template: TemplateRef<any>) {}
 
   //#endregion
 
@@ -17,6 +17,10 @@ export class OrgTemplateDirective {
   
   public getType(): string {
     return this.name;
+  }
+
+  public getTemplate(): TemplateRef<any>{
+    return this.template;
   }
   
   //#endregion

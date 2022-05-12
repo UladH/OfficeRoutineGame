@@ -33,13 +33,13 @@ export class MenuCardComponent implements AfterContentInit{
 
       switch(type) {
         case MenuCardTemplateType.Front:
-          this.frontTemplate = item.template;
+          this.frontTemplate = item.getTemplate();
           break;
         case MenuCardTemplateType.Back:
-          this.backTemplate = item.template;
+          this.backTemplate = item.getTemplate();
           break;
         default:
-          this.frontTemplate = item.template;
+          this.frontTemplate = item.getTemplate();
           break;
       }
     });
