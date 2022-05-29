@@ -5,6 +5,7 @@
 
 .org-card-header{
     @include get-font(H900, default , left);
+    font-weight: bold;
 }
 
 .org-card-footer{
