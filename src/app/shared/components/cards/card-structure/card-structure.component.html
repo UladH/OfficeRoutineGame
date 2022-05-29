@@ -1,0 +1,16 @@
+<div class="org-card" fxLayout="column" fxLayoutAlign="start none" fxFill>
+    <div class="org-card-header" *ngIf="header || headerTemplate"
+        [ngClass]="getHeaderClasses()">
+        <span>{{header}}</span>
+        <ng-container *ngTemplateOutlet="headerTemplate"></ng-container>        
+    </div>
+    <div class="org-card-body">        
+        <ng-content></ng-content>
+        <ng-container *ngTemplateOutlet="bodyTemplate"></ng-container>
+    </div>
+    <div class="org-card-footer" *ngIf="footer || footerTemplate"
+    [ngClass]="getFooterClasses()">
+        <span>{{footer}}</span>
+        <ng-container *ngTemplateOutlet="footerTemplate"></ng-container>
+    </div>
+</div>

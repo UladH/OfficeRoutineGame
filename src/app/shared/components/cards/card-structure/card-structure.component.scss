@@ -1,0 +1,24 @@
+@use "sass:map";
+
+@import "colors.scss";
+@import "typography.scss";
+
+.org-card-header{
+    @include get-font(H900, default , left);
+}
+
+.org-card-footer{
+    @include get-font(H300, default , left);
+}
+
+.org-card-text-left{
+    text-align: left;
+}
+
+.org-card-text-center{
+    text-align: center;
+}
+
+.org-card-text-right{
+    text-align: right;
+}
