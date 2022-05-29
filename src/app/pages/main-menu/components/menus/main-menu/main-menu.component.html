@@ -1,9 +1,11 @@
 <ng-container *transloco="let t">
-    <div>
+    <org-card-structure
+        [header]="t('scopeName.menu')"
+        headerPosition="center">
         <org-text-button
             [label]="t('scopeName.options')"
             size="L"
             (onClick)="onOptionsClickHandler($event)">
         </org-text-button>
-    </div>  
+    </org-card-structure> 
 </ng-container>

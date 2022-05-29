@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CoreModule } from '../core/core.module';
-import { TextButtonComponent } from './buttons/text-button/text-button.component';
-
+import { TextButtonComponent } from './components/buttons/text-button/text-button.component';
+import { CardStructureComponent } from './components/cards/card-structure/card-structure.component';
 @NgModule({
   declarations: [
-    TextButtonComponent
+    TextButtonComponent,
+    CardStructureComponent
   ],
   imports: [
     CoreModule
@@ -12,7 +13,8 @@ import { TextButtonComponent } from './buttons/text-button/text-button.component
   exports: [
     CoreModule,
 
-    TextButtonComponent
+    TextButtonComponent,
+    CardStructureComponent
   ]
 })
 export class SharedModule { }
