@@ -1,0 +1,8 @@
+@use "sass:map";
+
+@import "colors.scss";
+@import "typography.scss";
+
+.menu-title{
+    @include get-font(H900, default , center);
+}

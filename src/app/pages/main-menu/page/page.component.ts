@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, ViewChild } from '@angular/core';
 import { MenuCardComponent } from '../components/menu-card/menu-card.component';
+import { SubMenu } from './constants/submenu.enum';
 
 @Component({
   selector: 'org-page',
@@ -8,8 +9,11 @@ import { MenuCardComponent } from '../components/menu-card/menu-card.component';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PageComponent{
+  public readonly SUB_MENU = SubMenu;
 
-  @ViewChild(MenuCardComponent) menuCardComponent!: MenuCardComponent;
+  public currentSubMenu?: SubMenu;
+
+  @ViewChild(MenuCardComponent) menuCardComponent!: MenuCardComponent;  
   
   //#region  constructor
 
@@ -20,6 +24,7 @@ export class PageComponent{
   //#region handlers
 
   public onOptionsSelectHandler($event: Event): void{
+    this.currentSubMenu = SubMenu.Options;
     this.menuCardComponent.flip();
   }
 

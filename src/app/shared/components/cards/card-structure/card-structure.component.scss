@@ -1,0 +1,16 @@
+@use "sass:map";
+
+@import "colors.scss";
+@import "typography.scss";
+
+.org-card-text-left{
+    @include get-font(H900, default , left);
+}
+
+.org-card-text-center{
+    @include get-font(H900, default , center);
+}
+
+.org-card-text-right{
+    @include get-font(H900, default , right);
+}
