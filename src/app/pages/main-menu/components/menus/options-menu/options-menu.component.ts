@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Output } from '@angular/core';
+import { Size } from 'src/app/core/constants/enums/size.enum';
 
 @Component({
   selector: 'org-options-menu',
@@ -7,10 +8,21 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class OptionsMenuComponent {
+  public readonly SIZE = Size;
+  
+  @Output() onClose = new EventEmitter<Event>();
 
   //#region constructor
 
   constructor() { }
+
+  //#endregion
+  
+  //#region handlers
+
+  public onCloseClickHandler($event: Event): void{
+    this.onClose.emit($event);
+  }
 
   //#endregion
 }

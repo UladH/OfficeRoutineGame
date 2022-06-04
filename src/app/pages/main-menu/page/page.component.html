@@ -8,7 +8,9 @@
                 </org-main-menu>
             </ng-template>
             <ng-template orgTemplate="back" [ngSwitch]="currentSubMenu">
-                <org-options-menu *ngSwitchCase="SUB_MENU.Options"></org-options-menu>
+                <org-options-menu *ngSwitchCase="SUB_MENU.Options"
+                    (onClose)="onOptionsCloseHandler($event)">
+                </org-options-menu>
             </ng-template>
         </org-menu-card>
     </div>

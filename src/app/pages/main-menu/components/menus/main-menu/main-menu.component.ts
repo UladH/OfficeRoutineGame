@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Output } from '@angular/core';
+import { Size } from 'src/app/core/constants/enums/size.enum';
 
 @Component({
   selector: 'org-main-menu',
@@ -7,6 +8,7 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Output } from '@angul
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MainMenuComponent {
+  public readonly SIZE = Size;
   
   @Output() onOptionsMenuSelect = new EventEmitter<Event>();
 

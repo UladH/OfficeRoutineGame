@@ -1,1 +1,15 @@
-<p>options-menu works!</p>
+<ng-container *transloco="let t">
+    <org-card-structure
+        [header]="t('scopeName.options')"
+        headerPosition="center">
+        <div fxLayout="column" fxLayoutAlign="start stretch" >
+            <div fxLayout="column" fxLayoutAlign="start center" >
+                <org-outline-button
+                    [label]="t('scopeName.back')"
+                    [size]="SIZE.L"
+                    (onClick)="onCloseClickHandler($event)">
+                </org-outline-button>
+            </div>
+        </div>
+    </org-card-structure> 
+</ng-container>
