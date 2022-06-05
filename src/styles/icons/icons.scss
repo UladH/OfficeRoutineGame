@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Icons';
+    src: url('icons.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="orgi-"]:before, [class*=" orgi-"]:before {
+    font-family: "Icons";
+    font-style: normal;
+    font-weight: normal;
+  
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+  }
+  
+  .orgi-arrow-left-pixel:before { content: '\e800'; }
+  .orgi-arrow-right-pixel:before { content: '\e801'; }

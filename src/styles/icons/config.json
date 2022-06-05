@@ -1,0 +1,38 @@
+{
+  "name": "icons",
+  "css_prefix_text": "orgi-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "44271f9d2adff58b4f532e2e64b8d2f7",
+      "css": "arrow-left-pixel",
+      "code": 59392,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M769.5 5.9H679.7V95.7H589.8V185.5H500V275.4H410.2V365.2H320.3V455.1H230.5V544.9H320.3V634.8H410.2V726.6H500V816.4H589.8V906.3H679.7V994.1H769.5Z",
+        "width": 1000
+      },
+      "search": [
+        "arrow-left-pixel"
+      ]
+    },
+    {
+      "uid": "a9f091fb2792d808acd64aea8de8e148",
+      "css": "arrow-right-pixel",
+      "code": 59393,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M230.5 5.9H320.3V95.7H410.2V185.5H500V275.4H589.8V365.2H679.7V455.1H769.5V544.9H679.7V634.8H589.8V726.6H500V816.4H410.2V906.3H320.3V994.1H230.5Z",
+        "width": 1000
+      },
+      "search": [
+        "arrow-right-pixel"
+      ]
+    }
+  ]
+}
